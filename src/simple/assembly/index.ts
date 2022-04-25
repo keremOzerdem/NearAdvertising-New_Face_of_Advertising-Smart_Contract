@@ -9,7 +9,7 @@ import { AccountId } from "../../utils";
 import { Advertising, allAds } from "./model";
 
 // Health Check
-export function healtCheck(req: string, rep: string): string {
+export function healthCheck(req: string, rep: string): string {
 	storage.setString(req,rep);
 	let result = storage.getString(req);
 	if(result) {
@@ -19,7 +19,7 @@ export function healtCheck(req: string, rep: string): string {
 }
 
 // Create and Publish an Advertising
-export function publishAdvertising(text: string): News {
+export function publishAdvertising(text: string): Advertising {
 	logging.log("A scratch to the history of the Advertising future!");
 	return Advertising.publish(text);
 }
@@ -39,7 +39,7 @@ export function readAdvertising(): Advertising[] {
 // Delete your Advertising
 export function deleteAdvertising(id: u32): void {
 	logging.log("Looking forward to your new advertising!");
-	News.deleteAnAdvertising(id);
+	Advertising.deleteAnAdvertising(id);
 }
 
 //Donate the Advertisingman

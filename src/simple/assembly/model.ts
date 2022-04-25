@@ -26,8 +26,8 @@ export class Advertising{
 	}
 
 	static bringFromArchieve(id: u32): Advertising {
-		assert(allAdds.contains(id), "Advertising could not found! Please, check ID of the advertising!");
-		return allAdds.getSome(id);
+		assert(allAds.contains(id), "Advertising could not found! Please, check ID of the advertising!");
+		return allAds.getSome(id);
 	}
 	
 	static readAnAdvertising(): Advertising[] {
