@@ -1,5 +1,5 @@
 
-# Saying DApp
+# Advertising DApp
 
 A new generation web3 Advertising application. You can share your advertisings to the people all around the world. And get in touch with them.
 
