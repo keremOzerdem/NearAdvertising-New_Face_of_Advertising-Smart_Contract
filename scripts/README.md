@@ -20,8 +20,11 @@ It uses the following setup:
 *This window is used to compile, deploy and control the contract*
 - Environment
   ```sh
-  export CONTRACT=        # depends on deployment
-  export OWNER=           # any account you control
+	export CONTRACT=       # depends on deployment
+	export MY_ACC=         # any account you control
+	export ID=             # id of a specific advertising
+	export ADVERTISING=    # advertising
+	export AMOUNT=         # donation amount
 
   # for example
   # export CONTRACT=dev-1615190770786-2702449
@@ -32,9 +35,13 @@ It uses the following setup:
 
   _helper scripts_
   ```sh
-  1.dev-deploy.sh                # helper: build and deploy contracts
-  2.use-contract.sh              # helper: call methods on ContractPromise
-  3.cleanup.sh                   # helper: delete build and deploy artifacts
+	1.dev-deploy.sh    
+	2.health-check.sh      
+	3.publish-advertising.sh      
+	4.bring-advertising.sh         
+	5.read-advertising.sh
+	6.delete-advertising.sh
+	7.send-gratitude.sh
   ```
 
 ### Terminal **B**
